@@ -1,3 +1,10 @@
+<!--
+ * @author: SunXingQiang
+ * @Email: 237075663@qq.com
+ * @Date: 2024-05-31 11:12:35
+ * @LastEditors: SunXingQiang
+ * @LastEditTime: 2024-05-31 15:23:24
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,7 +17,57 @@
     <link rel="stylesheet" href="./assets/index-370253c9.css">
   </head>
   <body>
-    hello world
+    <!-- loading相关 -->
+    <div class="loading">
+      <img class="bgImage61" src="./assets/61bg-d0c767d1.png" alt="" srcset="">
+      <div class="loading-circle"></div>
+      <div class="progress"></div>
+    </div>
+    <div class="loading-complete display-none">
+      <img class="bgImage61" src="./assets/61bg-d0c767d1.png" alt="" srcset="">
+      <div class="start">进入</div>
+      <p>
+        Tips:(移动端建议开启横屏，双击屏幕开启全屏体验更佳！)
+      </p>
+    </div>
+
+    <!-- css3DRenderer -->
+    <div id="css"></div>
+
+    <!-- webgl -->
+    <div id="app"></div>
+
+    <!-- 下方气泡提示 -->
+    <div class="preview-tooltip hide"></div>
+    <div class="preview-tips hide">Tips：点击此画可查看详情</div>
+
+    <!-- 画框详情框 -->
+    <div class="boards-info" style="visibility: hidden;">
+      <div class="boards-container hide">
+        <div class="content">
+          <section class="info">
+            <div class="title"></div>
+            <div class="author"></div>
+            <div class="describe"></div>
+          </section>
+          <section class="img">
+            <img src="" alt="">
+          </section>
+        </div>
+        <div class="close boards-info-close"></div>
+      </div>
+    </div>
+
+    <!-- 操作指引弹窗 -->
+    <div class="help" title="帮助">?</div>
+    <div class="operating-intro display-none">
+      <h2>操作指引</h2>
+      <img class="operating-intro-img" src="./operating.png" alt="">
+      <div class="close operating-intro-close" title="关闭"></div>
+    </div>
+
+    <!-- 虚拟摇杆 -->
+    <div id="joystick"></div>
 
     
   </body>
